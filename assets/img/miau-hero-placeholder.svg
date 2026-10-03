@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="miauHeroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B1038"/>
+      <stop offset="50%" stop-color="#2D1263"/>
+      <stop offset="100%" stop-color="#551F85"/>
+    </linearGradient>
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+    <pattern id="stars" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.5" fill="#FFFFFF" opacity="0.3"/>
+      <circle cx="85" cy="45" r="2" fill="#FFD166" opacity="0.5"/>
+      <circle cx="45" cy="95" r="1" fill="#FFFFFF" opacity="0.4"/>
+      <circle cx="105" cy="105" r="2.5" fill="#9D4EDD" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#miauHeroBg)"/>
+  <rect width="1600" height="900" fill="url(#stars)"/>
+  
+  <!-- Subtle playful floating math elements -->
+  <g opacity="0.15" fill="#FFD166">
+    <text x="120" y="220" font-family="system-ui, sans-serif" font-size="110" font-weight="900">7 × 8 = 56</text>
+    <text x="1100" y="320" font-family="system-ui, sans-serif" font-size="90" font-weight="900">9 × 4 = 36</text>
+    <text x="300" y="780" font-family="system-ui, sans-serif" font-size="80" font-weight="900">3 × 3 = 9</text>
+    <text x="1220" y="740" font-family="system-ui, sans-serif" font-size="100" font-weight="900">6 × 7 = 42</text>
+  </g>
+
+  <!-- Central Tablet/Screen Frame Horizontal 16:9 -->
+  <rect x="220" y="100" width="1160" height="660" rx="32" fill="#0E0722" stroke="#7B2CBF" stroke-width="6"/>
+  <!-- Screen Inner -->
+  <rect x="240" y="120" width="1120" height="620" rx="24" fill="#241242"/>
+
+  <!-- Game Interface UI Sketch inside screen -->
+  <rect x="270" y="150" width="300" height="50" rx="25" fill="#3C1A6E"/>
+  <circle cx="300" cy="175" r="14" fill="#FFD166"/>
+  <text x="325" y="182" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">Miau Puntos: 1,420</text>
+
+  <rect x="1030" y="150" width="300" height="50" rx="25" fill="#3C1A6E"/>
+  <text x="1070" y="182" fill="#FF9E00" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">⭐⭐⭐ Racha: 5 días</text>
+
+  <!-- Big Challenge Blackboard -->
+  <rect x="360" y="240" width="880" height="340" rx="28" fill="#150B28" stroke="#FFD166" stroke-width="4" stroke-dasharray="12 12"/>
+  <text x="800" y="370" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="92" font-weight="900">8 × 7 = ?</text>
+
+  <!-- Options buttons -->
+  <g transform="translate(460, 430)">
+    <rect x="0" y="0" width="180" height="90" rx="20" fill="#7B2CBF"/>
+    <text x="90" y="58" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="bold">54</text>
+    
+    <rect x="250" y="0" width="180" height="90" rx="20" fill="url(#accentGold)"/>
+    <text x="340" y="58" fill="#1B1038" text-anchor="middle" font-family="system-ui, sans-serif" font-size="46" font-weight="900">56 ✨</text>
+    
+    <rect x="500" y="0" width="180" height="90" rx="20" fill="#7B2CBF"/>
+    <text x="590" y="58" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="bold">63</text>
+  </g>
+
+  <!-- Banner Bottom Badge -->
+  <rect x="300" y="800" width="1000" height="60" rx="14" fill="#000000" opacity="0.75"/>
+  <text x="800" y="840" fill="#FFD166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">
+    [PLACEHOLDER — MIAU MULTIPLICACIÓN · HERO SCREENSHOT 16:9]
+  </text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="advHeroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D114D"/>
+      <stop offset="50%" stop-color="#4B126E"/>
+      <stop offset="100%" stop-color="#1A2A4A"/>
+    </linearGradient>
+    <linearGradient id="goldButton" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#advHeroBg)"/>
+
+  <!-- Exploratory landscape background silhouette -->
+  <path d="M 0 700 Q 350 480 750 640 T 1600 580 L 1600 900 L 0 900 Z" fill="#150B28" opacity="0.6"/>
+  <path d="M 0 760 Q 450 620 900 730 T 1600 680 L 1600 900 L 0 900 Z" fill="#0C0617"/>
+
+  <!-- Tablet / Monitor frame 16:9 -->
+  <rect x="220" y="100" width="1160" height="660" rx="32" fill="#0F172A" stroke="#38BDF8" stroke-width="6"/>
+  <rect x="240" y="120" width="1120" height="620" rx="24" fill="#1E293B"/>
+
+  <!-- Header bar inside game frame -->
+  <rect x="260" y="140" width="1080" height="60" rx="18" fill="#0F172A" opacity="0.8"/>
+  <text x="290" y="180" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="22" font-weight="bold">🌱 Mundo 1: Valle de las Semillas</text>
+  <text x="1310" y="180" fill="#FACC15" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" text-anchor="end">⭐ 18 / 20 Estrellas</text>
+
+  <!-- Friendly Mascot & Sum Quest inside screen -->
+  <g transform="translate(420, 240)">
+    <!-- Cute friendly character "Mochi" placeholder -->
+    <circle cx="120" cy="160" r="80" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="4"/>
+    <circle cx="95" cy="145" r="10" fill="#0F172A"/>
+    <circle cx="145" cy="145" r="10" fill="#0F172A"/>
+    <ellipse cx="80" cy="170" rx="10" ry="6" fill="#F43F5E" opacity="0.6"/>
+    <ellipse cx="160" cy="170" rx="10" ry="6" fill="#F43F5E" opacity="0.6"/>
+    <path d="M 105 168 Q 120 182 135 168" stroke="#0F172A" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- Dialogue Box with Math Quest -->
+    <rect x="250" y="70" width="500" height="180" rx="24" fill="#0F172A" stroke="#38BDF8" stroke-width="3"/>
+    <text x="500" y="150" fill="#F8FAFC" text-anchor="middle" font-family="system-ui, sans-serif" font-size="54" font-weight="900">4 + 5 = ?</text>
+    <text x="500" y="210" fill="#94A3B8" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20">¡Ayuda a Mochi a cruzar el puente!</text>
+  </g>
+
+  <!-- Interactive buttons in game -->
+  <g transform="translate(460, 520)">
+    <rect x="0" y="0" width="180" height="84" rx="20" fill="#334155"/>
+    <text x="90" y="54" fill="#F8FAFC" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="bold">8</text>
+    <rect x="250" y="0" width="180" height="84" rx="20" fill="url(#goldButton)"/>
+    <text x="340" y="54" fill="#0F172A" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="900">9 ✨</text>
+    <rect x="500" y="0" width="180" height="84" rx="20" fill="#334155"/>
+    <text x="590" y="54" fill="#F8FAFC" text-anchor="middle" font-family="system-ui, sans-serif" font-size="42" font-weight="bold">10</text>
+  </g>
+
+  <!-- Banner Bottom Badge -->
+  <rect x="260" y="800" width="1080" height="60" rx="14" fill="#000000" opacity="0.8"/>
+  <text x="800" y="838" fill="#38BDF8" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">
+    [PLACEHOLDER — AVENTURA NUMÉRICA · HERO SCREENSHOT 16:9]
+  </text>
+</svg>

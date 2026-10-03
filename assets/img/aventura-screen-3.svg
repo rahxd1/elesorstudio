@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="advMiniBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027"/>
+      <stop offset="50%" stop-color="#203A43"/>
+      <stop offset="100%" stop-color="#2C5364"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#advMiniBg)"/>
+  <rect x="60" y="40" width="1480" height="80" rx="20" fill="#0B132B" opacity="0.9"/>
+  <text x="120" y="92" fill="#2EC4B6" font-family="system-ui, sans-serif" font-size="32" font-weight="900">🎈 Minijuego: Globos Numéricos</text>
+  <text x="1400" y="92" fill="#FFD166" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" text-anchor="end">🎯 Meta: Sumar 10</text>
+
+  <!-- Floating Balloons -->
+  <g transform="translate(320, 240)">
+    <circle cx="0" cy="0" r="70" fill="#E63946"/>
+    <text x="0" y="18" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" font-weight="bold">6</text>
+    <path d="M 0 70 Q 10 110 -5 150" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(620, 320)">
+    <circle cx="0" cy="0" r="76" fill="#F4A261"/>
+    <text x="0" y="18" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" font-weight="bold">4</text>
+    <path d="M 0 76 Q -10 120 5 160" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.7"/>
+    <!-- Selection Glow ring -->
+    <circle cx="0" cy="0" r="88" stroke="#FFD166" stroke-width="6" fill="none" stroke-dasharray="10 6"/>
+  </g>
+
+  <g transform="translate(950, 220)">
+    <circle cx="0" cy="0" r="70" fill="#2A9D8F"/>
+    <text x="0" y="18" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" font-weight="bold">7</text>
+    <path d="M 0 70 Q 15 110 -10 150" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(1260, 300)">
+    <circle cx="0" cy="0" r="72" fill="#8338EC"/>
+    <text x="0" y="18" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" font-weight="bold">3</text>
+    <path d="M 0 72 Q -15 115 5 155" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Bottom score basket -->
+  <rect x="520" y="580" width="560" height="120" rx="24" fill="#0B132B" stroke="#2EC4B6" stroke-width="3"/>
+  <text x="800" y="635" fill="#E2E8F0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28">¡Combina globos que sumen 10!</text>
+  <text x="800" y="675" fill="#2EC4B6" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">Seleccionados: 6 + 4 = 10 ✨</text>
+
+  <!-- Placeholder label -->
+  <rect x="200" y="780" width="1200" height="60" rx="14" fill="#000000" opacity="0.8"/>
+  <text x="800" y="820" fill="#2EC4B6" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">
+    [PLACEHOLDER — AVENTURA · GAMEPLAY SCREENSHOT 16:9 - MINIJUEGO DE SUMA]
+  </text>
+</svg>

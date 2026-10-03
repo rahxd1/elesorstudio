@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241242"/>
+      <stop offset="100%" stop-color="#4A154B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg1)"/>
+  <!-- UI Top Bar -->
+  <rect x="60" y="40" width="1480" height="80" rx="20" fill="#150B28" opacity="0.9"/>
+  <text x="120" y="92" fill="#FFD166" font-family="system-ui, sans-serif" font-size="32" font-weight="900">🐾 Tabla del 7 · Modo Ninja</text>
+  <text x="1400" y="92" fill="#2EC4B6" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" text-anchor="end">❤️ ❤️ ❤️ Vidas</text>
+
+  <!-- Central Gameplay Card -->
+  <rect x="250" y="180" width="1100" height="520" rx="30" fill="#1B1038" stroke="#9D4EDD" stroke-width="4"/>
+  <text x="800" y="320" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="80" font-weight="900">7 × 6 = ?</text>
+  <text x="800" y="390" fill="#E0AAFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30">Toca la respuesta antes de que se acabe el tiempo</text>
+
+  <g transform="translate(380, 470)">
+    <rect x="0" y="0" width="220" height="110" rx="22" fill="#5A189A"/>
+    <text x="110" y="72" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="bold">40</text>
+    <rect x="310" y="0" width="220" height="110" rx="22" fill="#06D6A0"/>
+    <text x="420" y="72" fill="#0E1726" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="900">42 ✓</text>
+    <rect x="620" y="0" width="220" height="110" rx="22" fill="#5A189A"/>
+    <text x="730" y="72" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="52" font-weight="bold">49</text>
+  </g>
+
+  <!-- Placeholder label -->
+  <rect x="200" y="780" width="1200" height="60" rx="14" fill="#000000" opacity="0.8"/>
+  <text x="800" y="820" fill="#FFD166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">
+    [PLACEHOLDER — MIAU · GAMEPLAY SCREENSHOT 16:9 - RETO MULTIPLICAR]
+  </text>
+</svg>

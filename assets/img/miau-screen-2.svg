@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1235"/>
+      <stop offset="100%" stop-color="#2D154F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgPet)"/>
+  <rect x="60" y="40" width="1480" height="80" rx="20" fill="#150B28" opacity="0.9"/>
+  <text x="120" y="92" fill="#FFD166" font-family="system-ui, sans-serif" font-size="32" font-weight="900">🐱 Tu Mascota: Mágico (Nivel 3)</text>
+  <text x="1400" y="92" fill="#FFB703" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" text-anchor="end">✨ Felicidad: 100%</text>
+
+  <!-- Mascot Stage -->
+  <circle cx="800" cy="400" r="180" fill="#3D1D6E" stroke="#FFD166" stroke-width="4"/>
+  <!-- Cute stylized cat face in SVG -->
+  <polygon points="700,280 730,220 760,280" fill="#FFB84D"/>
+  <polygon points="840,280 870,220 900,280" fill="#FFB84D"/>
+  <circle cx="800" cy="380" r="110" fill="#FFB84D"/>
+  <circle cx="760" cy="360" r="14" fill="#1B1038"/>
+  <circle cx="840" cy="360" r="14" fill="#1B1038"/>
+  <polygon points="800,385 790,400 810,400" fill="#FF6B9D"/>
+  <path d="M780,410 Q800,425 820,410" stroke="#1B1038" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Wizard hat -->
+  <polygon points="760,280 800,160 840,280" fill="#7B2CBF"/>
+  <ellipse cx="800" cy="280" rx="60" ry="12" fill="#9D4EDD"/>
+  <circle cx="800" cy="220" r="8" fill="#FFD166"/>
+
+  <!-- Accessories rack -->
+  <g transform="translate(300, 620)">
+    <rect x="0" y="0" width="220" height="90" rx="18" fill="#241442" stroke="#FFD166" stroke-width="3"/>
+    <text x="110" y="55" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">🎩 Sombrero</text>
+    <rect x="260" y="0" width="220" height="90" rx="18" fill="#241442" stroke="#9D4EDD" stroke-width="2"/>
+    <text x="370" y="55" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">🧣 Bufanda</text>
+    <rect x="520" y="0" width="220" height="90" rx="18" fill="#241442" stroke="#9D4EDD" stroke-width="2"/>
+    <text x="630" y="55" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">✨ Capa Estelar</text>
+    <rect x="780" y="0" width="220" height="90" rx="18" fill="#241442" stroke="#9D4EDD" stroke-width="2"/>
+    <text x="890" y="55" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">🎨 Colores</text>
+  </g>
+
+  <!-- Placeholder label -->
+  <rect x="200" y="780" width="1200" height="60" rx="14" fill="#000000" opacity="0.8"/>
+  <text x="800" y="820" fill="#FFD166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">
+    [PLACEHOLDER — MIAU · GAMEPLAY SCREENSHOT 16:9 - MASCOTAS]
+  </text>
+</svg>

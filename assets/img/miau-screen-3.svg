@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAdv" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120B2E"/>
+      <stop offset="100%" stop-color="#2D114D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgAdv)"/>
+  <rect x="60" y="40" width="1480" height="80" rx="20" fill="#150B28" opacity="0.9"/>
+  <text x="120" y="92" fill="#FFD166" font-family="system-ui, sans-serif" font-size="32" font-weight="900">🗺️ Gran Aventura · Mapa del Reino</text>
+  <text x="1400" y="92" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" text-anchor="end">🏆 Nivel 5 Desbloqueado</text>
+
+  <!-- Zig-zag map path -->
+  <path d="M 220 540 Q 420 300 620 500 T 1020 320 T 1380 440" stroke="#FFD166" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="24 16"/>
+
+  <!-- World nodes on map -->
+  <g transform="translate(220, 540)">
+    <circle cx="0" cy="0" r="48" fill="#06D6A0" stroke="#FFFFFF" stroke-width="6"/>
+    <text x="0" y="12" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold">1</text>
+    <text x="0" y="80" fill="#E0AAFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold">Valle Verde</text>
+  </g>
+  <g transform="translate(620, 500)">
+    <circle cx="0" cy="0" r="48" fill="#06D6A0" stroke="#FFFFFF" stroke-width="6"/>
+    <text x="0" y="12" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold">2</text>
+    <text x="0" y="80" fill="#E0AAFF" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold">Río Cristal</text>
+  </g>
+  <g transform="translate(1020, 320)">
+    <circle cx="0" cy="0" r="54" fill="#FFD166" stroke="#FFFFFF" stroke-width="6"/>
+    <text x="0" y="14" fill="#1B1038" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="900">3</text>
+    <text x="0" y="86" fill="#FFD166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">Montaña Helada</text>
+  </g>
+  <g transform="translate(1380, 440)">
+    <circle cx="0" cy="0" r="48" fill="#4A1E6D" stroke="#9D4EDD" stroke-width="4"/>
+    <text x="0" y="10" fill="#9D4EDD" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30">🔒</text>
+    <text x="0" y="80" fill="#9D4EDD" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">Castillo Oscuro</text>
+  </g>
+
+  <!-- Placeholder label -->
+  <rect x="200" y="780" width="1200" height="60" rx="14" fill="#000000" opacity="0.8"/>
+  <text x="800" y="820" fill="#FFD166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">
+    [PLACEHOLDER — MIAU · GAMEPLAY SCREENSHOT 16:9 - MUNDO AVENTURA]
+  </text>
+</svg>
