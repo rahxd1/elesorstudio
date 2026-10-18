@@ -3,39 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aventura Numérica | Suma, Resta y Lógica Infantil — Elesor Studio</title>
-  <meta name="description" content="Aventura Numérica es un videojuego educativo en pantalla horizontal diseñado para que niños y niñas dominen la suma y la resta de preescolar a 4º de primaria sin estrés.">
+  <title>Aventura Numérica | Aprende Matemáticas a tu Propio Ritmo — Elesor Studio</title>
+  <meta name="description" content="Aventura Numérica es la app educativa infantil en estilo plastilina 3D donde niños de 4 a 10 años dominan la suma, resta y valor posicional cuidando a su mascota mágica y explorando mundos sin estrés.">
   <link rel="canonical" href="https://elesorstudio.com/aventura-numerica/">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elesorstudio.com/aventura-numerica/">
-  <meta property="og:title" content="Aventura Numérica | Suma, Resta y Lógica Infantil">
-  <meta property="og:description" content="Una aventura interactiva para aprender matemáticas jugando. 6 Reinos, 95 niveles pedagógicos, pantalla horizontal 16:9 y 100% segura para familias.">
-  <meta property="og:image" content="https://elesorstudio.com/assets/img/aventura-numerica.png">
+  <meta property="og:title" content="Aventura Numérica | Aprende Matemáticas a tu Propio Ritmo">
+  <meta property="og:description" content="Explora mundos de plastilina 3D, cuida a Mochi, Pompón o Bambú y domina las matemáticas de Preescolar a 4º de Primaria. 100% Offline, sin anuncios y segura para niños.">
+  <meta property="og:image" content="https://elesorstudio.com/aventura-numerica/assets/icon.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://elesorstudio.com/aventura-numerica/">
-  <meta name="twitter:title" content="Aventura Numérica | Suma, Resta y Lógica Infantil">
-  <meta name="twitter:description" content="Aprende matemáticas explorando 6 reinos en pantalla horizontal. Sin anuncios ni compras integradas.">
-  <meta name="twitter:image" content="https://elesorstudio.com/assets/img/aventura-numerica.png">
+  <meta name="twitter:title" content="Aventura Numérica | Aprende Matemáticas a tu Propio Ritmo">
+  <meta name="twitter:description" content="Videojuego educativo infantil en estilo plastilina 3D. 6 Reinos, +80 niveles, 30+ minijuegos y mascota interactiva. Cero anuncios.">
+  <meta name="twitter:image" content="https://elesorstudio.com/aventura-numerica/assets/icon.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../assets/img/logo.png">
+  <!-- Favicon Oficial de Plastilina -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
 
   <!-- Estilos modulares -->
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/aventura.css">
 
-  <!-- Schema.org Datos Estructurados -->
+  <!-- Schema.org Datos Estructurados Completos para Tiendas -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "MobileApplication",
     "name": "Aventura Numérica",
     "operatingSystem": "Android, iOS",
-    "applicationCategory": "EducationalApplication",
+    "applicationCategory": "EducationalApplication, GameApplication",
+    "applicationSubCategory": "Math Game for Kids",
+    "softwareVersion": "2.0.0",
+    "inLanguage": "es-MX",
+    "isAccessibleForFree": true,
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -46,32 +51,120 @@
       "name": "Elesor Studio",
       "url": "https://elesorstudio.com"
     },
-    "description": "Videojuego formativo que transforma el cálculo mental y el razonamiento lógico en una expedición interactiva de 95 niveles para niños de preescolar a 4º de primaria."
+    "screenshot": [
+      "https://elesorstudio.com/aventura-numerica/assets/start_config.png",
+      "https://elesorstudio.com/aventura-numerica/assets/home.png",
+      "https://elesorstudio.com/aventura-numerica/assets/mundos.png",
+      "https://elesorstudio.com/aventura-numerica/assets/game2.png",
+      "https://elesorstudio.com/aventura-numerica/assets/victory.png"
+    ],
+    "description": "Aplicación móvil educativa en estilo plastilina 3D (Claymorphism) que transforma el aprendizaje de conteo, suma, resta y valor posicional en una aventura con mascotas virtuales, +80 niveles, 30+ minijuegos y alineación curricular SEP / CPA para niños de 4 a 10 años."
   }
   </script>
 </head>
-<body style="background-color: #0F0A1C; color: #F8FAFC;">
-  <!-- Enlace accesible de salto al contenido -->
+<body class="aventura-body">
   <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
-  <!-- Header de la App -->
-  <header class="site-header" style="background: rgba(15, 10, 28, 0.95); border-bottom-color: rgba(124, 58, 237, 0.2);">
-    <div class="container nav-container">
-      <a href="../" class="nav-brand" aria-label="Volver a Elesor Studio">
-        <img src="../assets/img/logo.png" alt="Logo de Elesor Studio" class="nav-logo-img" width="44" height="44">
-        <span>Elesor Studio</span>
-      </a>
+  <!-- Header de la App con Submenús por Categoría -->
+  <header class="site-header aventura-header">
+    <div class="container nav-container aventura-nav-container">
+      <div class="aventura-brand-group">
+        <a href="../" class="nav-brand aventura-back-brand" aria-label="Volver a Elesor Studio">
+          <img src="../assets/img/logo.png" alt="Logo de Elesor Studio" class="nav-logo-img" width="34" height="34">
+          <span>Elesor Studio</span>
+        </a>
+        <span class="nav-brand-sep" aria-hidden="true">/</span>
+        <a href="#inicio-app" class="nav-app-pill">
+          <img src="assets/icon.png" alt="Icono Aventura Numérica" width="28" height="28">
+          <span>Aventura Numérica</span>
+        </a>
+      </div>
 
-      <!-- Navegación Desktop -->
-      <nav aria-label="Navegación de Aventura Numérica">
-        <ul class="nav-links">
-          <li><a href="../" class="nav-link">← Elesor Studio</a></li>
-          <li><a href="#que-es" class="nav-link">¿Qué es?</a></li>
-          <li><a href="#reinos" class="nav-link">6 Reinos</a></li>
-          <li><a href="#caracteristicas" class="nav-link">Pedagogía</a></li>
-          <li><a href="#galeria" class="nav-link">Galería</a></li>
-          <li><a href="#seguridad" class="nav-link">Seguridad</a></li>
-          <li><a href="#descarga" class="btn btn-primary" style="min-height: 40px; padding: 6px 16px; font-size: var(--text-sm); background-color: var(--color-adv-accent); color: #0F0A1C;">Descargar</a></li>
+      <!-- Navegación Desktop con Submenús Categorizados -->
+      <nav aria-label="Navegación de Aventura Numérica" class="aventura-desktop-nav">
+        <ul class="nav-links aventura-nav-links">
+          <li>
+            <a href="#pantallas" class="nav-link">📱 Pantallas</a>
+          </li>
+
+          <!-- Submenú 1: El Juego -->
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>🎮 El Juego</span>
+              <span class="nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav-dropdown-panel" role="menu">
+              <a href="#companeros" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">🦊</span>
+                <span class="nav-dropdown-text">
+                  <strong>Mascotas y Hogar 3D</strong>
+                  <small>Cuida a Mochi, Pompón y Bambú</small>
+                </span>
+              </a>
+              <a href="#mundos" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">🏰</span>
+                <span class="nav-dropdown-text">
+                  <strong>6 Mundos y Jefes</strong>
+                  <small>Mapa de ruta, reliquias y jefes</small>
+                </span>
+              </a>
+              <a href="#minijuegos" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">🕹️</span>
+                <span class="nav-dropdown-text">
+                  <strong>+30 Minijuegos</strong>
+                  <small>Memoria, Bloques Base 10 y Tren</small>
+                </span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Submenú 2: Padres y Escuela -->
+          <li class="nav-dropdown">
+            <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>🛡️ Padres y Escuela</span>
+              <span class="nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav-dropdown-panel" role="menu">
+              <a href="#pedagogia" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">🌱</span>
+                <span class="nav-dropdown-text">
+                  <strong>Pedagogía CPA y SEP</strong>
+                  <small>Preescolar a 4º de Primaria</small>
+                </span>
+              </a>
+              <a href="#seguridad" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">🔒</span>
+                <span class="nav-dropdown-text">
+                  <strong>Seguridad Infantil</strong>
+                  <small>0% Anuncios, 100% Offline y COPPA</small>
+                </span>
+              </a>
+              <a href="#ficha" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">📋</span>
+                <span class="nav-dropdown-text">
+                  <strong>Ficha Técnica Oficial</strong>
+                  <small>Versión 2.0, Bundle ID y permisos</small>
+                </span>
+              </a>
+              <a href="#faq" class="nav-dropdown-item" role="menuitem">
+                <span class="nav-dropdown-icon">❓</span>
+                <span class="nav-dropdown-text">
+                  <strong>Preguntas Frecuentes (FAQ)</strong>
+                  <small>Respuestas rápidas para familias</small>
+                </span>
+              </a>
+              <div class="nav-dropdown-divider" role="separator"></div>
+              <div class="nav-dropdown-footer-links">
+                <a href="privacidad.html">📜 Privacidad</a>
+                <span>·</span>
+                <a href="terminos.html">⚖️ Términos</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#descarga" class="btn-clay btn-clay-orange btn-clay-sm nav-cta-btn">▶ Descargar</a>
+          </li>
         </ul>
       </nav>
 
@@ -83,364 +176,766 @@
       </button>
     </div>
 
-    <!-- Menú Móvil Desplegable -->
+    <!-- Menú Móvil Desplegable Categorizado -->
     <div id="menu-movil-aventura" class="mobile-nav" style="background: rgba(15, 10, 28, 0.98);" aria-label="Navegación móvil de Aventura Numérica">
       <ul class="mobile-nav-links">
         <li><a href="../" class="mobile-nav-link">← Volver a Elesor Studio</a></li>
-        <li><a href="#que-es" class="mobile-nav-link">¿Qué es Aventura Numérica?</a></li>
-        <li><a href="#reinos" class="mobile-nav-link">Los 6 Reinos del Saber</a></li>
-        <li><a href="#caracteristicas" class="mobile-nav-link">Características Pedagógicas</a></li>
-        <li><a href="#galeria" class="mobile-nav-link">Galería 16:9</a></li>
-        <li><a href="#seguridad" class="mobile-nav-link">Seguridad Infantil y Padres</a></li>
-        <li><a href="#descarga" class="mobile-nav-link" style="color: var(--color-adv-accent);">Descargar la App</a></li>
+        <li><a href="#pantallas" class="mobile-nav-link">📱 Pantallas del Juego</a></li>
+        <li class="mobile-nav-group-title">🎮 El Juego</li>
+        <li><a href="#companeros" class="mobile-nav-link">🦊 Mascotas y Hogar 3D</a></li>
+        <li><a href="#mundos" class="mobile-nav-link">🏰 6 Mundos y Jefes</a></li>
+        <li><a href="#minijuegos" class="mobile-nav-link">🕹️ +30 Minijuegos</a></li>
+        <li class="mobile-nav-group-title">🛡️ Padres y Escuela</li>
+        <li><a href="#pedagogia" class="mobile-nav-link">🌱 Pedagogía CPA y Grados SEP</a></li>
+        <li><a href="#seguridad" class="mobile-nav-link">🔒 Seguridad Infantil y Ficha</a></li>
+        <li><a href="#faq" class="mobile-nav-link">❓ Preguntas Frecuentes (FAQ)</a></li>
+        <li><a href="#descarga" class="mobile-nav-link" style="color: var(--clay-yellow);">▶ Descargar Aventura Numérica</a></li>
       </ul>
     </div>
   </header>
 
   <main id="contenido-principal">
-    <!-- Hero Aventura Numérica -->
-    <section class="hero-aventura">
+    <!-- ======================================================================
+         1. HERO SHOWCASE — ESTILO PLASTILINA 3D & GAMER
+         ====================================================================== -->
+    <section id="inicio-app" class="hero-aventura">
       <div class="container">
         <div class="hero-aventura-grid">
           <div class="reveal">
-            <span class="aventura-badge">App Móvil Infantil · Pantalla Horizontal · iOS & Android</span>
-            <h1 class="hero-aventura-title">Aventura Numérica</h1>
+            <div class="clay-pill-badge">
+              <span>✨ Arte en Plastilina 3D · Preescolar a 4º de Primaria (4 a 10 años)</span>
+            </div>
+
+            <h1 class="hero-aventura-title">
+              <span class="title-gold">AVENTURA</span> <span class="title-cyan">NUMÉRICA</span>
+            </h1>
+
             <p class="hero-aventura-subtitle">
-              Aprende a sumar, restar y pensar matemáticamente jugando. 6 reinos, 95 niveles pedagógicos progresivos y un jardín mágico diseñados para inspirar la confianza infantil de preescolar a 4º de primaria.
+              <strong>«Aprende matemáticas a tu propio ritmo 🌱»</strong> — Un universo artesanal en plastilina 3D donde cada suma, resta y reto de lógica alimenta a tu compañero mágico, desbloquea castillos y construye confianza matemática sin estrés.
             </p>
 
-            <div class="hero-aventura-meta">
-              <img src="../assets/img/aventura-numerica.png" alt="Arte e icono oficial de Aventura Numérica" class="app-icon-real" width="120" height="120">
+            <div class="hero-app-card">
+              <img src="assets/icon.png" alt="Icono oficial de Aventura Numérica con Pompón, Mochi y Bambú en plastilina 3D" class="hero-app-icon" width="82" height="82">
               <div>
-                <p style="font-weight: 800; font-size: var(--text-lg); color: #FFFFFF;">Elesor Studio</p>
-                <p style="font-size: var(--text-sm); color: #38BDF8;">Suma y resta con sentido · Cero publicidad</p>
-                <p style="font-size: var(--text-xs); color: #94A3B8; margin-top: 4px;">Alineado a la Nueva Escuela Mexicana (SEP)</p>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span class="clay-font" style="font-size: 1.15rem; font-weight: 700; color: #FFFFFF;">Aventura Numérica v2.0</span>
+                  <span style="font-size: 0.72rem; background: rgba(108, 71, 255, 0.35); color: #DDD6FE; padding: 2px 8px; border-radius: 99px; font-weight: 800;">Elesor Studio</span>
+                </div>
+                <p style="font-size: 0.84rem; color: #CBD5E1; margin-top: 2px;">
+                  Alineado a la Nueva Escuela Mexicana (SEP), método CPA y Singapore Math.
+                </p>
+                <div class="hero-app-tags">
+                  <span class="clay-mini-tag tag-green">✓ Cero Anuncios</span>
+                  <span class="clay-mini-tag tag-blue">✓ 100% Offline</span>
+                  <span class="clay-mini-tag tag-gold">✓ Voz en Español (TTS)</span>
+                  <span class="clay-mini-tag">✓ Control Parental</span>
+                </div>
               </div>
             </div>
 
             <div class="hero-aventura-actions" id="descarga">
-              <div class="play-badge-placeholder" role="region" aria-label="Disponibilidad en tiendas oficiales">
-                <svg class="play-badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <a href="#pantallas" class="btn-clay btn-clay-purple">
+                <span>▶ Ver Pantallas</span>
+              </a>
+              <a href="#mundos" class="btn-clay btn-clay-orange">
+                <span>🏰 Explorar Mundos</span>
+              </a>
+              <div class="play-badge-placeholder" role="region" aria-label="Disponibilidad en tiendas oficiales" style="background: rgba(13, 9, 26, 0.9); border-color: rgba(158, 133, 255, 0.4); min-height: 48px; padding: 6px 14px;">
+                <svg class="play-badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color: #38BDF8; width: 24px; height: 24px;">
                   <path d="M3.609 1.814L13.792 12 3.61 22.186a2.373 2.373 0 0 1-.61-.715V2.53c.18-.28.39-.526.61-.715zm11.233 11.234l2.58 2.58-12.02 6.84 9.44-9.42zm2.58-2.096l2.12 1.205c.98.56.98 1.47 0 2.03l-2.12 1.205-2.84-2.84 2.84-1.6zm-2.58-.952L5.402 3.56l12.02 6.84-2.58 2.58z"/>
                 </svg>
                 <div class="play-badge-text">
-                  <span class="play-badge-sub">DISPONIBLE EN</span>
-                  <span class="play-badge-title">Google Play & App Store</span>
-                  <span class="play-badge-status">Próximamente en Tiendas</span>
+                  <span class="play-badge-sub">ANDROID & iOS</span>
+                  <span class="play-badge-title" style="font-size: 0.95rem;">Google Play & App Store</span>
+                  <span class="play-badge-status">Lanzamiento Oficial · v2.0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-quick-stats">
+              <div class="hero-stat-pill">
+                <div class="hero-stat-num">6 Reinos</div>
+                <div class="hero-stat-label">9 Mundos</div>
+              </div>
+              <div class="hero-stat-pill">
+                <div class="hero-stat-num">+80 Niveles</div>
+                <div class="hero-stat-label">4 Modos c/u</div>
+              </div>
+              <div class="hero-stat-pill">
+                <div class="hero-stat-num">30+ Juegos</div>
+                <div class="hero-stat-label">En Plastilina</div>
+              </div>
+              <div class="hero-stat-pill">
+                <div class="hero-stat-num">100% Seguro</div>
+                <div class="hero-stat-label">COPPA & Play</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Escaparate de 3 Teléfonos -->
+          <div class="reveal">
+            <div class="hero-phones-stage" aria-label="Vista previa en teléfonos de Aventura Numérica">
+              <div class="floating-clay-badge floating-badge-top">
+                <img src="assets/action_coin.png" alt="Moneda" width="24" height="24">
+                <span>+73 Monedas · 100% Precisión</span>
+              </div>
+
+              <div class="phone-mockup hero-phone-side hero-phone-left"
+                   data-lightbox-src="assets/home.png"
+                   data-lightbox-caption="Hogar de Plastilina: ¡Hora de comer y cuidar a tu compañero Bambú!"
+                   tabindex="0" role="button" aria-label="Ampliar pantalla de Hogar y Mascota">
+                <div class="phone-screen">
+                  <img src="assets/home.png" alt="Pantalla Hogar: Hora de comer con Bambú" loading="eager">
                 </div>
               </div>
 
-              <a href="#que-es" class="btn btn-outline" style="border-color: rgba(255, 255, 255, 0.3);">Conocer la pedagogía</a>
-            </div>
-          </div>
+              <div class="phone-mockup hero-phone-center"
+                   data-lightbox-src="assets/start_config.png"
+                   data-lightbox-caption="Pantalla de Bienvenida: Pompón, Mochi y Bambú con acceso parental protegido"
+                   tabindex="0" role="button" aria-label="Ampliar pantalla principal">
+                <div class="phone-screen">
+                  <img src="assets/start_config.png" alt="Pantalla de inicio de Aventura Numérica" loading="eager">
+                </div>
+              </div>
 
-          <!-- Hero Screenshot 16:9 Placeholder -->
-          <div class="reveal">
-            <div class="media-16-9" style="box-shadow: 0 20px 40px rgba(124, 58, 237, 0.35);">
-              <img src="../assets/img/aventura-hero-placeholder.svg" alt="[PLACEHOLDER — AVENTURA NUMÉRICA · HERO SCREENSHOT 16:9] - Vista general del gameplay horizontal de Aventura Numérica">
+              <div class="phone-mockup hero-phone-side hero-phone-right"
+                   data-lightbox-src="assets/game2.png"
+                   data-lightbox-caption="Minijuego Base 10: Construye el total con bloques de Decenas (10) y Unidades (1)"
+                   tabindex="0" role="button" aria-label="Ampliar pantalla de Minijuego de Bloques">
+                <div class="phone-screen">
+                  <img src="assets/game2.png" alt="Minijuego de bloques 29 + 32 = 61" loading="eager">
+                </div>
+              </div>
+
+              <div class="floating-clay-badge floating-badge-bottom">
+                <img src="assets/action_heart.png" alt="Corazón" width="24" height="24">
+                <span>Sin pérdida de vidas ni estrés</span>
+              </div>
             </div>
-            <p style="text-align: center; font-size: var(--text-xs); color: #94A3B8; margin-top: var(--space-2);">
-              Formato horizontal nativo (16:9) optimizado para tablets y móviles
-            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Sección ¿Qué es? -->
-    <section id="que-es" class="section-py" style="background-color: #170E2C;">
+    <!-- ======================================================================
+         2. SLIDER AUTOMÁTICO 3D DE PANTALLAS REALES DEL JUEGO
+         ====================================================================== -->
+    <section id="pantallas" class="section-py screens-showcase-section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" style="color: #38BDF8;">Concepto Pedagógico</span>
-          <h2 class="section-title" style="color: #FFFFFF;">¿Qué es Aventura Numérica?</h2>
-          <p class="section-subtitle" style="color: #CBD5E1;">
-            Es un videojuego que transforma el cálculo mental en una expedición de exploración y confianza. En lugar de planas repetitivas o preguntas con castigos, cada número es un escalón interactivo para comprender las matemáticas desde la raíz.
+          <span class="clay-section-eyebrow">📱 Recorrido Automático en Alta Definición</span>
+          <h2 class="clay-section-title">Así se Juega Aventura Numérica</h2>
+          <p class="clay-section-subtitle">
+            Observa cada pantalla en grande. El carrusel avanza automáticamente (puedes pausarlo pasando el cursor o tocar la pantalla central para hacer zoom).
           </p>
         </div>
 
-        <div style="max-width: 860px; margin-inline: auto; font-size: var(--text-base); color: #CBD5E1; line-height: 1.8;" class="reveal">
-          <p style="margin-bottom: var(--space-4);">
-            El juego sigue el probado enfoque pedagógico <strong>Concreto → Pictórico → Abstracto (CPA)</strong>: los niños primero tocan y cuentan semillas u objetos reales, luego visualizan marcos de diez fichas y bloques de valor posicional, y finalmente dominan las operaciones escritas con total soltura.
-          </p>
-          <p>
-            Al estar diseñado exclusivamente en orientación <strong>horizontal panorámica 16:9</strong>, ofrece una interfaz táctil espaciosa que previene toques erróneos y favorece la concentración ergonómica con ambas manos en cualquier pantalla.
-          </p>
+        <div class="screens-slider-wrapper reveal" id="screens-auto-slider" aria-roledescription="carousel" aria-label="Galería automática de pantallas de Aventura Numérica">
+          <!-- Escenario 3D Coverflow de Teléfonos Grandes -->
+          <div class="slider-phones-stage">
+            <button type="button" class="slider-nav-arrow slider-arrow-prev" id="slider-prev" aria-label="Pantalla anterior">‹</button>
+
+            <div class="slider-phones-track">
+              <!-- Slide 0: start_config.png -->
+              <div class="slider-phone-item is-active" data-slide-index="0"
+                   data-lightbox-src="assets/start_config.png"
+                   data-lightbox-caption="1. Bienvenida Mágica y Configuración de Nivel («Soy un adulto»)">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/start_config.png" alt="Pantalla 1: Bienvenida y configuración parental">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 1: home.png -->
+              <div class="slider-phone-item is-next" data-slide-index="1"
+                   data-lightbox-src="assets/home.png"
+                   data-lightbox-caption="2. Hogar en Plastilina: ¡Hora de Comer! Cuida y alimenta a tu mascota">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/home.png" alt="Pantalla 2: Hogar interactivo y comida de la mascota">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: mundos.png -->
+              <div class="slider-phone-item" data-slide-index="2"
+                   data-lightbox-src="assets/mundos.png"
+                   data-lightbox-caption="3. Mapa de Ruta (Castillo Real) con progreso de estrellas y botón «🏁 Ya lo sé»">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/mundos.png" alt="Pantalla 3: Mapa del mundo y niveles progresivos">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: game.png -->
+              <div class="slider-phone-item" data-slide-index="3"
+                   data-lightbox-src="assets/game.png"
+                   data-lightbox-caption="4. Isla del Tesoro: Memoria de sumas equivalentes con voz y pistas">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/game.png" alt="Pantalla 4: Minijuego Encuentra la pareja correcta">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: game2.png -->
+              <div class="slider-phone-item" data-slide-index="4"
+                   data-lightbox-src="assets/game2.png"
+                   data-lightbox-caption="5. Constructor Base 10 (29 + 32 = 61): Barras de Decenas (10) y Unidades (1)">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/game2.png" alt="Pantalla 5: Minijuego Constructor de Bloques Base 10">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: game3.png -->
+              <div class="slider-phone-item" data-slide-index="5"
+                   data-lightbox-src="assets/game3.png"
+                   data-lightbox-caption="6. Tren Numérico (22 - 21 = ?): Razonamiento de diferencia sobre rieles">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/game3.png" alt="Pantalla 6: Minijuego Tren Numérico">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6: victory.png -->
+              <div class="slider-phone-item is-prev" data-slide-index="6"
+                   data-lightbox-src="assets/victory.png"
+                   data-lightbox-caption="7. ¡Nivel Completado con 100% Precisión! 3 Estrellas, comida y recompensas">
+                <div class="phone-mockup slider-phone-mockup">
+                  <div class="phone-screen">
+                    <img src="assets/victory.png" alt="Pantalla 7: Celebración de victoria con 3 estrellas">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="slider-nav-arrow slider-arrow-next" id="slider-next" aria-label="Siguiente pantalla">›</button>
+          </div>
+
+          <!-- Panel de Información Detallada Sincronizado -->
+          <div class="slider-info-panel">
+            <div class="slider-info-top">
+              <span class="slider-step-badge" id="slider-step-badge">Pantalla 1 de 7 · Inicio</span>
+              <button type="button" class="slider-autoplay-toggle" id="slider-play-toggle" aria-label="Pausar o reanudar carrusel automático">
+                ⏸ Auto
+              </button>
+            </div>
+
+            <h3 class="slider-info-title" id="slider-info-title">Portada Mágica y Ajuste Parental</h3>
+            <p class="slider-info-desc" id="slider-info-desc">
+              Entrada inmediata con un solo toque en «▶ Empezar» para los niños, y botón inferior «Soy un adulto (configurar nivel)» protegido por barrera matemática para elegir el grado escolar exacto.
+            </p>
+
+            <div class="slider-highlights" id="slider-highlights">
+              <span class="clay-mini-tag tag-gold">✨ Arte en Plastilina 3D</span>
+              <span class="clay-mini-tag tag-green">🔒 Barrera Parental</span>
+              <span class="clay-mini-tag tag-blue">👶 Perfiles Locales</span>
+            </div>
+
+            <!-- Barra de progreso del temporizador automático -->
+            <div class="slider-progress-bar" aria-hidden="true">
+              <div class="slider-progress-fill" id="slider-progress-fill"></div>
+            </div>
+
+            <!-- Selector rápido de las 7 pantallas -->
+            <div class="slider-thumbs-bar" role="tablist" aria-label="Seleccionar pantalla">
+              <button type="button" class="slider-thumb-pill is-active" data-goto-slide="0" role="tab" aria-selected="true">1. Inicio</button>
+              <button type="button" class="slider-thumb-pill" data-goto-slide="1" role="tab" aria-selected="false">2. Hogar 🐼</button>
+              <button type="button" class="slider-thumb-pill" data-goto-slide="2" role="tab" aria-selected="false">3. Mapa 🏰</button>
+              <button type="button" class="slider-thumb-pill" data-goto-slide="3" role="tab" aria-selected="false">4. Memoria 🃏</button>
+              <button type="button" class="slider-thumb-pill" data-goto-slide="4" role="tab" aria-selected="false">5. Bloques 🧱</button>
+              <button type="button" class="slider-thumb-pill" data-goto-slide="5" role="tab" aria-selected="false">6. Tren 🚂</button>
+              <button type="button" class="slider-thumb-pill" data-goto-slide="6" role="tab" aria-selected="false">7. Victoria ⭐</button>
+            </div>
+
+            <div style="margin-top: 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <button type="button" class="btn-clay btn-clay-purple btn-clay-sm" id="slider-zoom-btn">
+                🔍 Ampliar esta captura en pantalla completa
+              </button>
+              <span style="font-size: 0.78rem; color: #94A3B8;">Usa las flechas ‹ › o toca los teléfonos laterales</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Sección Los 6 Reinos del Saber -->
-    <section id="reinos" class="section-py" style="background-color: #0F0A1C;">
+    <!-- ======================================================================
+         3. COMPAÑEROS EN PLASTILINA 3D Y CUIDADO AFECTIVO (COMPACTO)
+         ====================================================================== -->
+    <section id="companeros" class="section-py companions-section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" style="color: #10B981;">Currículo Estructurado</span>
-          <h2 class="section-title" style="color: #FFFFFF;">Los 6 Reinos y 95 Niveles de Campaña</h2>
-          <p class="section-subtitle" style="color: #94A3B8;">
-            Un mapa continuo y correlativo que acompaña el crecimiento escolar paso a paso.
+          <span class="clay-section-eyebrow" style="background: rgba(245, 132, 38, 0.22); border-color: rgba(245, 132, 38, 0.5); color: #FDBA74;">
+            🦊 Vínculo Emocional Positivo
+          </span>
+          <h2 class="clay-section-title">Compañeros en Plastilina 3D y Hogar Interactivo</h2>
+          <p class="clay-section-subtitle">
+            Cada niño elige a su amigo ideal. Las monedas ganadas resolviendo matemáticas sirven para alimentarlo, vestirlo y decorar su habitación sin castigos.
           </p>
         </div>
 
-        <div class="adv-features-grid">
-          <div class="adv-feature-card reveal" style="border-top: 3px solid #10B981;">
-            <span class="adv-feature-icon" aria-hidden="true">🌱</span>
-            <h3 class="adv-feature-title">Reino 0 · Semillas del Número</h3>
-            <p class="adv-feature-desc">
-              <strong>Preescolar (5 años) · Mundo 0:</strong> Reconocimiento auditivo de numerales del 0 al 10, conteo uno a uno, destello de patrones (subitización) y comparación visual de cantidades sin estrés.
-            </p>
-          </div>
+        <div class="companions-grid reveal">
+          <article class="companion-clay-card">
+            <div class="companion-avatar-wrap" style="background: radial-gradient(circle, #FFF3E0 0%, #FFE0B2 100%);">
+              <img src="assets/mochi_happy.png" alt="Mochi el Zorrito en plastilina 3D" width="86" height="86" loading="lazy">
+            </div>
+            <div>
+              <span class="companion-role-badge" style="background: #F58426;">🦊 Explorador</span>
+              <h3 class="companion-name">Mochi</h3>
+              <p class="companion-desc-short">Zorrito curioso amante de plantar semillas mágicas y celebrar cada suma.</p>
+              <div class="companion-fav-food">
+                <img src="assets/food_sandwich.png" alt="Sándwich" width="18" height="18">
+                <span>Favorito: <strong>Sándwich Especial</strong></span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal" style="border-top: 3px solid #38BDF8;">
-            <span class="adv-feature-icon" aria-hidden="true">🍄</span>
-            <h3 class="adv-feature-title">Reino 1 · Valle de las Semillas</h3>
-            <p class="adv-feature-desc">
-              <strong>1º Primaria P1 · Mundos 1, 2 y 3:</strong> Sumas y restas hasta el 10 con dominós y amigos del 10. Recta numérica interactiva y primeros problemas cotidianos de 1 paso.
-            </p>
-          </div>
+          <article class="companion-clay-card">
+            <div class="companion-avatar-wrap" style="background: radial-gradient(circle, #FCE4EC 0%, #F8BBD0 100%);">
+              <img src="assets/pompon_happy.png" alt="Pompón el Conejito en plastilina 3D" width="86" height="86" loading="lazy">
+            </div>
+            <div>
+              <span class="companion-role-badge" style="background: #EC4899;">🐰 Veloz y Alegre</span>
+              <h3 class="companion-name">Pompón</h3>
+              <p class="companion-desc-short">Conejito saltarín lleno de chispa que da saltos gigantes en la recta numérica.</p>
+              <div class="companion-fav-food">
+                <img src="assets/food_carrot.png" alt="Zanahoria" width="18" height="18">
+                <span>Favorito: <strong>Zanahoria Crujiente</strong></span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal" style="border-top: 3px solid #818CF8;">
-            <span class="adv-feature-icon" aria-hidden="true">💎</span>
-            <h3 class="adv-feature-title">Reino 2 · Cumbre de Cristal</h3>
-            <p class="adv-feature-desc">
-              <strong>1º Primaria P2 · Mundo 4:</strong> Estrategia de cruce de decena (completar 10 y sumar el resto), números "diez-y-algo" hasta el 20 y dobles numéricos con marcos dobles de diez.
-            </p>
-          </div>
+          <article class="companion-clay-card">
+            <div class="companion-avatar-wrap" style="background: radial-gradient(circle, #E0F2F1 0%, #B2DFDB 100%);">
+              <img src="assets/bambu_happy.png" alt="Bambú el Panda en plastilina 3D" width="86" height="86" loading="lazy">
+            </div>
+            <div>
+              <span class="companion-role-badge" style="background: #10B981;">🐼 Tranquilo</span>
+              <h3 class="companion-name">Bambú</h3>
+              <p class="companion-desc-short">Panda paciente y sereno: transmite calma en cada paso y siempre sonríe.</p>
+              <div class="companion-fav-food">
+                <img src="assets/food_bamboo.png" alt="Bambú" width="18" height="18">
+                <span>Favorito: <strong>Brote de Bambú</strong></span>
+              </div>
+            </div>
+          </article>
+        </div>
 
-          <div class="adv-feature-card reveal" style="border-top: 3px solid #F59E0B;">
-            <span class="adv-feature-icon" aria-hidden="true">🏰</span>
-            <h3 class="adv-feature-title">Reino 3 · Ciudad de las Decenas</h3>
-            <p class="adv-feature-desc">
-              <strong>2º Primaria · Mundo 5:</strong> Decenas completas, sumas y restas de 2 cifras sin y con reagrupación usando bloques multibase, caja de cobro de tienda y problemas contextualizados hasta 100.
-            </p>
+        <div class="pet-features-bar reveal">
+          <div class="pet-bar-item">
+            <span class="pet-bar-icon">🍎</span>
+            <div>
+              <h4 class="clay-font" style="color: #FFFFFF; font-size: 1rem;">4 Necesidades sin Castigo</h4>
+              <p style="font-size: 0.82rem; color: #CBD5E1;">Cuida su <strong>Hambre, Higiene, Energía y Diversión</strong>. La manzana siempre es gratis (∞) y tu mascota jamás enferma si dejas de jugar.</p>
+            </div>
           </div>
-
-          <div class="adv-feature-card reveal" style="border-top: 3px solid #EC4899;">
-            <span class="adv-feature-icon" aria-hidden="true">🌌</span>
-            <h3 class="adv-feature-title">Reino 4 · Galaxia Cósmica</h3>
-            <p class="adv-feature-desc">
-              <strong>3º Primaria · Mundos 6 y 7:</strong> Operaciones de 3 cifras con acarreo guiado, canje de desagrupación, detective de errores y fluidez de cálculo mental sin presión de vidas.
-            </p>
+          <div class="pet-bar-item">
+            <span class="pet-bar-icon">🛍️</span>
+            <div>
+              <h4 class="clay-font" style="color: var(--clay-yellow); font-size: 1rem;">Tienda de Ropa y Cuarto Día/Noche</h4>
+              <p style="font-size: 0.82rem; color: #CBD5E1;">Desbloquea gorras, lentes, alas, trajes de cada mundo (Pirata, Rey, Astronauta) y muebles de plastilina (cama, tina, sofá, librero).</p>
+            </div>
           </div>
-
-          <div class="adv-feature-card reveal" style="border-top: 3px solid #EAB308;">
-            <span class="adv-feature-icon" aria-hidden="true">👑</span>
-            <h3 class="adv-feature-title">Reino 5 · Imperio de los Millares</h3>
-            <p class="adv-feature-desc">
-              <strong>4º Primaria · Mundo 9:</strong> Sumas y restas de 4 a 6 cifras, restas con ceros sucesivos (ej. 1,000 − 347), combinadas y el combate cumbre contra el Gran Titán de los Millares.
-            </p>
+          <div class="pet-bar-item">
+            <span class="pet-bar-icon">🥚</span>
+            <div>
+              <h4 class="clay-font" style="color: #7DD3FC; font-size: 1rem;">7 Eventos Diarios con Misterio Nocturno</h4>
+              <p style="font-size: 0.82rem; color: #CBD5E1;">Al dormir, tu mascota anticipa la aventura de mañana: <em>Huevo Misterioso, Bufanda Voladora, Estrella Fugaz, Mapa del Río y más</em>.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Características Pedagógicas -->
-    <section id="caracteristicas" class="section-py" style="background-color: #170E2C;">
+    <!-- ======================================================================
+         4. LOS 6 MUNDOS, JEFES 3D Y RELIQUIAS (COMPACTO)
+         ====================================================================== -->
+    <section id="mundos" class="section-py worlds-section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" style="color: #F59E0B;">Diseño para la Confianza</span>
-          <h2 class="section-title" style="color: #FFFFFF;">Principios Didácticos Inquebrantables</h2>
-          <p class="section-subtitle" style="color: #94A3B8;">
-            Construido para motivar a cada estudiante respetando su tiempo y madurez cognitiva.
+          <span class="clay-section-eyebrow" style="background: rgba(46, 204, 113, 0.2); border-color: rgba(46, 204, 113, 0.45); color: #6EE7B7;">
+            🗺️ Currículo Progresivo SEP (Preescolar a 4º Primaria)
+          </span>
+          <h2 class="clay-section-title">Mundos en Plastilina, Jefes Guardianes y Reliquias</h2>
+          <p class="clay-section-subtitle">
+            Cada mundo enseña una estrategia clave y culmina en un duelo amistoso contra su Jefe Guardián para ganar una Reliquia con poderes permanentes.
           </p>
         </div>
 
-        <div class="adv-features-grid">
-          <div class="adv-feature-card reveal">
-            <span class="adv-feature-icon" aria-hidden="true">🔊</span>
-            <h3 class="adv-feature-title">Voz Primero (Audio Offline)</h3>
-            <p class="adv-feature-desc">
-              Cada consigna e instrucción cuenta con un botón para escucharla en voz alta con síntesis nativa. Los niños pequeños aprenden sin depender de saber leer con fluidez.
-            </p>
-          </div>
+        <div class="worlds-grid reveal">
+          <!-- Mundo 1 -->
+          <article class="world-clay-card">
+            <div class="world-card-banner">
+              <img src="assets/world_w1.png" alt="Mundo 1: Valle de las Semillas" class="world-card-bg" loading="lazy">
+              <span class="world-badge-top">🌱 Mundo 1</span>
+              <span class="world-grade-pill">1º Primaria · Suma 1–10</span>
+              <img src="assets/boss_w1_mole.png" alt="Jefe: El Topo Travieso" class="world-boss-render" loading="lazy">
+            </div>
+            <div class="world-card-body">
+              <h3 class="world-card-title">Valle de las Semillas</h3>
+              <div class="world-card-skill">Juntar colecciones y Amigos del 10</div>
+              <p class="world-card-desc">Sumas hasta el 10 con Casa del 10, trenes y memoria sin reloj.</p>
+              <div class="world-meta-footer">
+                <span style="color: #FCA5A5; font-weight: 800;">🦔 El Topo Travieso</span>
+                <span style="color: var(--clay-yellow); font-weight: 800;">🌿 Reliquia: Semilla Dorada</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal">
-            <span class="adv-feature-icon" aria-hidden="true">🕊️</span>
-            <h3 class="adv-feature-title">Cero Muerte Súbita ni Ansiedad</h3>
-            <p class="adv-feature-desc">
-              Nunca hay temporizadores que bloqueen o frustren a menores de 8 años. El error no quita vidas: brinda pistas y acompaña hasta comprender el procedimiento.
-            </p>
-          </div>
+          <!-- Mundo 2 -->
+          <article class="world-clay-card">
+            <div class="world-card-banner">
+              <img src="assets/world_w2.png" alt="Mundo 2: Bosque de los Hongos" class="world-card-bg" loading="lazy">
+              <span class="world-badge-top">🍄 Mundo 2</span>
+              <span class="world-grade-pill">1º Primaria · Resta 1–10</span>
+              <img src="assets/boss_w2_tree.png" alt="Jefe: El Gran Roble Dormilón" class="world-boss-render" loading="lazy">
+            </div>
+            <div class="world-card-body">
+              <h3 class="world-card-title">Bosque de los Hongos</h3>
+              <div class="world-card-skill">Quitar, separar y distancia en la recta</div>
+              <p class="world-card-desc">Resta visual con Balanza Mágica y saltos en la recta numérica.</p>
+              <div class="world-meta-footer">
+                <span style="color: #FCA5A5; font-weight: 800;">🌳 Roble Dormilón</span>
+                <span style="color: var(--clay-yellow); font-weight: 800;">🔮 Reliquia: Orbe de Visión</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal">
-            <span class="adv-feature-icon" aria-hidden="true">🌸</span>
-            <h3 class="adv-feature-title">El Jardín del Saber</h3>
-            <p class="adv-feature-desc">
-              El conocimiento se vuelve visible. Las habilidades dominadas germinan en un jardín personal que crece y se fortalece mediante misiones diarias y repaso espaciado.
-            </p>
-          </div>
+          <!-- Mundo 3 -->
+          <article class="world-clay-card">
+            <div class="world-card-banner">
+              <img src="assets/world_w3.png" alt="Mundo 3: Isla del Tesoro" class="world-card-bg" loading="lazy">
+              <span class="world-badge-top">🏴‍☠️ Mundo 3</span>
+              <span class="world-grade-pill">1º Primaria · Mixtas 1–10</span>
+              <img src="assets/boss_w3_captain.png" alt="Jefe: Capitán Garfio Travieso" class="world-boss-render" loading="lazy">
+            </div>
+            <div class="world-card-body">
+              <h3 class="world-card-title">Isla del Tesoro</h3>
+              <div class="world-card-skill">Operaciones Mixtas y Familias (3+4 ↔ 7−4)</div>
+              <p class="world-card-desc">Tienda Pirata, dominós e historias para dominar la reversibilidad.</p>
+              <div class="world-meta-footer">
+                <span style="color: #FCA5A5; font-weight: 800;">🏴‍☠️ Capitán Garfio</span>
+                <span style="color: var(--clay-yellow); font-weight: 800;">🛡️ Reliquia: Escudo Cristal</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal">
-            <span class="adv-feature-icon" aria-hidden="true">👨‍👩‍👦</span>
-            <h3 class="adv-feature-title">Barrera Parental (Parental Gate)</h3>
-            <p class="adv-feature-desc">
-              El panel de configuración y los ajustes avanzados están custodiados por retos matemáticos diseñados para adultos, previniendo reinicios o salidas accidentales.
-            </p>
-          </div>
+          <!-- Mundo 4 -->
+          <article class="world-clay-card">
+            <div class="world-card-banner">
+              <img src="assets/world_w4.png" alt="Mundo 4: Cumbre de Cristal" class="world-card-bg" loading="lazy">
+              <span class="world-badge-top">🏔️ Mundo 4</span>
+              <span class="world-grade-pill">1º–2º Primaria · Cruce del 10</span>
+              <img src="assets/boss_w4_yeti.png" alt="Jefe: El Gran Yeti Helado" class="world-boss-render" loading="lazy">
+            </div>
+            <div class="world-card-body">
+              <h3 class="world-card-title">Cumbre de Cristal</h3>
+              <div class="world-card-skill">Hacer 10 y cruzar la decena (5 a 20)</div>
+              <p class="world-card-desc">Completa primero 10 (ej. <code>8+5 = 8+2+3</code>) con Marcos Dobles de 10.</p>
+              <div class="world-meta-footer">
+                <span style="color: #FCA5A5; font-weight: 800;">🧊 Gran Yeti Helado</span>
+                <span style="color: var(--clay-yellow); font-weight: 800;">❄️ Reliquia: Cristal de Hielo</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal">
-            <span class="adv-feature-icon" aria-hidden="true">🛡️</span>
-            <h3 class="adv-feature-title">100% Privado y Seguro</h3>
-            <p class="adv-feature-desc">
-              Sin publicidad, sin compras dentro de la app, sin cuentas y sin recopilación de datos personales. Cumplimiento estricto de COPPA y Google Play Families.
-            </p>
-          </div>
+          <!-- Mundo 5 -->
+          <article class="world-clay-card">
+            <div class="world-card-banner">
+              <img src="assets/world_w5.png" alt="Mundo 5: Castillo Real" class="world-card-bg" loading="lazy">
+              <span class="world-badge-top">🏰 Mundo 5</span>
+              <span class="world-grade-pill">2º Primaria · 2 Cifras (10–60)</span>
+              <img src="assets/boss_w5_king.png" alt="Jefe: El Rey Gruñón" class="world-boss-render" loading="lazy">
+            </div>
+            <div class="world-card-body">
+              <h3 class="world-card-title">Castillo Real</h3>
+              <div class="world-card-skill">Valor Posicional: Decenas y Unidades</div>
+              <p class="world-card-desc">Construye totales con barras de 10 y cubos de 1 y suma en columnas.</p>
+              <div class="world-meta-footer">
+                <span style="color: #FCA5A5; font-weight: 800;">👑 El Rey Gruñón</span>
+                <span style="color: var(--clay-yellow); font-weight: 800;">👑 Reliquia: Corona Real</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="adv-feature-card reveal">
-            <span class="adv-feature-icon" aria-hidden="true">✈️</span>
-            <h3 class="adv-feature-title">100% Offline</h3>
-            <p class="adv-feature-desc">
-              Todo el contenido y el guardado funcionan de forma autónoma sin internet. Ideal para traslados, autos, aulas escolares o zonas con baja conectividad.
-            </p>
+          <!-- Mundo 6 -->
+          <article class="world-clay-card">
+            <div class="world-card-banner">
+              <img src="assets/world_w6.png" alt="Mundo 6: Galaxia Cósmica" class="world-card-bg" loading="lazy">
+              <span class="world-badge-top">🚀 Mundo 6</span>
+              <span class="world-grade-pill">2º–3º Primaria · Acarreo (20–99)</span>
+              <img src="assets/boss_w6_nova.png" alt="Jefe: Nova Cósmica" class="world-boss-render" loading="lazy">
+            </div>
+            <div class="world-card-body">
+              <h3 class="world-card-title">Galaxia Cósmica</h3>
+              <div class="world-card-skill">Reagrupación, Acarreo y Préstamo (Canje)</div>
+              <p class="world-card-desc">Canjea 10 unidades por 1 decena y encuentra fallos como Detective.</p>
+              <div class="world-meta-footer">
+                <span style="color: #FCA5A5; font-weight: 800;">🤖 Nova Cósmica</span>
+                <span style="color: var(--clay-yellow); font-weight: 800;">⭐ Reliquia: Estrella Maestra</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Mundos 0, 7 y 9 en tira compacta -->
+        <div class="extra-worlds-strip reveal">
+          <div class="extra-world-box">
+            <span class="clay-mini-tag tag-green" style="margin-bottom: 4px;">🌱 Mundo 0 · Preescolar (4–5 años)</span>
+            <h4 class="clay-font" style="font-size: 1rem; color: #FFFFFF;">Jardín de las Semillas</h4>
+            <p style="font-size: 0.78rem; color: #CBD5E1;">Conteo 1–10, correspondencia y subitización sin signos formales.</p>
+          </div>
+          <div class="extra-world-box">
+            <span class="clay-mini-tag tag-blue" style="margin-bottom: 4px;">🌌 Mundo 7 · 3º Primaria (8–9 años)</span>
+            <h4 class="clay-font" style="font-size: 1rem; color: #FFFFFF;">Galaxia Maestra</h4>
+            <p style="font-size: 0.78rem; color: #CBD5E1;">Cálculo mental rápido hasta 100 y 3 cifras (999) ante <em>Nova Rebelde</em>.</p>
+          </div>
+          <div class="extra-world-box">
+            <span class="clay-mini-tag tag-gold" style="margin-bottom: 4px;">🏛️ Mundo 9 · 4º Primaria (9–10 años)</span>
+            <h4 class="clay-font" style="font-size: 1rem; color: #FFFFFF;">Imperio de los Millares</h4>
+            <p style="font-size: 0.78rem; color: #CBD5E1;">Sumas y restas de 4 a 6 cifras (99,999) contra el <em>Titán de los Millares</em>.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Galería de Screenshots 16:9 con Lightbox -->
-    <section id="galeria" class="section-py" style="background-color: #0F0A1C;">
+    <!-- ======================================================================
+         5. PEDAGOGÍA BENTO COMPACTO (4 MODOS + PILARES + 30+ MINIJUEGOS)
+         ====================================================================== -->
+    <section id="pedagogia" class="section-py pedagogy-section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" style="color: #38BDF8;">Vistas de Juego</span>
-          <h2 class="section-title" style="color: #FFFFFF;">Galería de Gameplay</h2>
-          <p class="section-subtitle" style="color: #CBD5E1;">
-            Capturas ilustrativas del entorno panorámico 16:9 en diferentes etapas de la aventura. Haz clic en cualquiera para ampliarla.
-          </p>
+          <span class="clay-section-eyebrow">🧠 Método Concreto → Pictórico → Abstracto (CPA)</span>
+          <h2 class="clay-section-title">4 Modos Progresivos y +30 Minijuegos</h2>
         </div>
 
-        <div class="adv-gallery-grid">
-          <div class="adv-gallery-item reveal" data-lightbox-src="../assets/img/aventura-screen-1.svg" tabindex="0" role="button" aria-label="Ampliar captura 1: Mapa de Mundos">
-            <div class="media-16-9">
-              <img src="../assets/img/aventura-screen-1.svg" alt="[PLACEHOLDER — AVENTURA · GAMEPLAY SCREENSHOT 16:9 - MAPA DE MUNDOS]">
+        <!-- 4 Modos en una fila compacta -->
+        <div class="modes-grid reveal">
+          <div class="mode-clay-card" style="border-top: 3px solid #2ECC71;">
+            <h3 class="mode-title">🌱 1. Aprender</h3>
+            <div class="mode-tagline">Concreto · Sin Reloj</div>
+            <p class="mode-desc">Objetos manipulables, apoyo visual máximo y voz paso a paso.</p>
+          </div>
+          <div class="mode-clay-card" style="border-top: 3px solid #38BDF8;">
+            <h3 class="mode-title">🌿 2. Practicar</h3>
+            <div class="mode-tagline">Pictórico · 1.2x 🪙</div>
+            <p class="mode-desc">Practica a tu propio ritmo con retroalimentación de tu mascota.</p>
+          </div>
+          <div class="mode-clay-card" style="border-top: 3px solid #F58426;">
+            <h3 class="mode-title">🔥 3. Reto</h3>
+            <div class="mode-tagline">Autónomo · 1.5x 🪙</div>
+            <p class="mode-desc">Ecuaciones simbólicas con pistas bajo demanda cuando las necesites.</p>
+          </div>
+          <div class="mode-clay-card" style="border-top: 3px solid #FFD13B;">
+            <h3 class="mode-title">🏆 4. Maestría</h3>
+            <div class="mode-tagline">Superestrella · 2.0x 🪙</div>
+            <p class="mode-desc">Fluidez y agilidad mental con reloj para ganar la copa dorada.</p>
+          </div>
+        </div>
+
+        <!-- Bento 2 Columnas: Pilares + Nube de Minijuegos -->
+        <div class="pedagogy-bento-grid reveal">
+          <div class="bento-box">
+            <h3 class="clay-font" style="font-size: 1.25rem; color: #FFFFFF;">Principios Didácticos Inquebrantables</h3>
+            <div class="pillars-mini-grid">
+              <div class="pillar-mini-card">
+                <strong style="color: #7DD3FC; font-size: 0.86rem;">🔊 Voz Primero (Offline TTS)</strong>
+                <p style="font-size: 0.78rem; color: #CBD5E1; margin-top: 2px;">Instrucciones habladas para preescolares sin depender de saber leer.</p>
+              </div>
+              <div class="pillar-mini-card">
+                <strong style="color: #6EE7B7; font-size: 0.86rem;">🕊️ Cero Castigo por Error</strong>
+                <p style="font-size: 0.78rem; color: #CBD5E1; margin-top: 2px;">El fallo activa pistas visuales guiadas sin perder lo ganado.</p>
+              </div>
+              <div class="pillar-mini-card">
+                <strong style="color: var(--clay-yellow); font-size: 0.86rem;">🏁 Botón «¡Ya lo sé!»</strong>
+                <p style="font-size: 0.78rem; color: #CBD5E1; margin-top: 2px;">Permite validar conocimientos previos y saltar al mundo adecuado.</p>
+              </div>
+              <div class="pillar-mini-card">
+                <strong style="color: #FDBA74; font-size: 0.86rem;">👨‍👩‍👧 Multi-Perfil & Offline</strong>
+                <p style="font-size: 0.78rem; color: #CBD5E1; margin-top: 2px;">Varios perfiles locales para hermanos, 100% funcional sin internet.</p>
+              </div>
             </div>
-            <p class="adv-gallery-caption">Mapa de 6 Reinos y Desafíos Progresivos</p>
           </div>
 
-          <div class="adv-gallery-item reveal" data-lightbox-src="../assets/img/aventura-screen-2.svg" tabindex="0" role="button" aria-label="Ampliar captura 2: Desafío Matemático">
-            <div class="media-16-9">
-              <img src="../assets/img/aventura-screen-2.svg" alt="[PLACEHOLDER — AVENTURA · GAMEPLAY SCREENSHOT 16:9 - DESAFÍO MATEMÁTICO]">
+          <div class="bento-box" id="minijuegos">
+            <h3 class="clay-font" style="font-size: 1.25rem; color: #FFFFFF;">+30 Minijuegos en el Motor</h3>
+            <p style="font-size: 0.82rem; color: #CBD5E1;">Cada concepto se domina con mecánicas táctiles variadas:</p>
+            <div class="minigames-cloud">
+              <span class="minigame-pill">🧱 Bloques Base 10</span>
+              <span class="minigame-pill">🚂 Tren Numérico</span>
+              <span class="minigame-pill">🃏 Memoria de Sumas</span>
+              <span class="minigame-pill">⚖️ Balanza Mágica</span>
+              <span class="minigame-pill">🏠 Casa del 10</span>
+              <span class="minigame-pill">🔟 Marcos Dobles de 10</span>
+              <span class="minigame-pill">🔄 Canje y Préstamo</span>
+              <span class="minigame-pill">📐 Columna Guiada</span>
+              <span class="minigame-pill">🕵️ Detective de Errores</span>
+              <span class="minigame-pill">🏴‍☠️ Tienda Pirata</span>
+              <span class="minigame-pill">📏 Recta Numérica</span>
+              <span class="minigame-pill">🫧 Burbujas</span>
+              <span class="minigame-pill">⚡ Subitización</span>
+              <span class="minigame-pill">🎲 Dominós</span>
+              <span class="minigame-pill">📡 Radar de Sumas</span>
+              <span class="minigame-pill">📖 Cuentos</span>
             </div>
-            <p class="adv-gallery-caption">Batallas de Jefes con Escudos Numéricos</p>
-          </div>
-
-          <div class="adv-gallery-item reveal" data-lightbox-src="../assets/img/aventura-screen-3.svg" tabindex="0" role="button" aria-label="Ampliar captura 3: Minijuego de Suma">
-            <div class="media-16-9">
-              <img src="../assets/img/aventura-screen-3.svg" alt="[PLACEHOLDER — AVENTURA · GAMEPLAY SCREENSHOT 16:9 - MINIJUEGO DE SUMA]">
-            </div>
-            <p class="adv-gallery-caption">Minijuegos Dinámicos: Marcos de 10, Canjes y Columnas</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Sección Seguridad Infantil (Confianza para Padres) -->
-    <section id="seguridad" class="section-py" style="background-color: #170E2C;">
-      <div class="container reveal">
-        <div class="adv-safety-card">
-          <h2 class="adv-safety-title">Compromiso de Seguridad para Familias y Escuelas</h2>
-          <p class="adv-safety-desc">
-            En Elesor Studio construimos software educativo con la premisa innegociable de proteger la infancia y la tranquilidad de los tutores:
-          </p>
+    <!-- ======================================================================
+         6. SEGURIDAD INFANTIL, FICHA TÉCNICA Y FAQ (TODO INTEGRADO)
+         ====================================================================== -->
+    <section id="seguridad" class="section-py" style="background-color: #110B22;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="clay-section-eyebrow" style="background: rgba(46, 204, 113, 0.2); border-color: rgba(46, 204, 113, 0.5); color: #6EE7B7;">
+            🛡️ Cumplimiento Google Play Families · Apple Kids · COPPA
+          </span>
+          <h2 class="clay-section-title">Seguridad Infantil, Ficha Técnica y FAQ</h2>
+        </div>
 
-          <ul class="adv-safety-list">
-            <li class="adv-safety-item">
-              <span class="adv-safety-icon" aria-hidden="true">✓</span>
-              <span><strong>Cero recopilación de datos:</strong> No solicitamos nombres, correos ni datos personales.</span>
-            </li>
-            <li class="adv-safety-item">
-              <span class="adv-safety-icon" aria-hidden="true">✓</span>
-              <span><strong>Sin cuentas ni registros obligatorios:</strong> Se instala y se juega de inmediato.</span>
-            </li>
-            <li class="adv-safety-item">
-              <span class="adv-safety-icon" aria-hidden="true">✓</span>
-              <span><strong>Sin anuncios publicitarios:</strong> Cero comerciales, banners o rastreadores comerciales.</span>
-            </li>
-            <li class="adv-safety-item">
-              <span class="adv-safety-icon" aria-hidden="true">✓</span>
-              <span><strong>Sin compras dentro de la app:</strong> Las recompensas se ganan resolviendo matemáticas.</span>
-            </li>
-            <li class="adv-safety-item">
-              <span class="adv-safety-icon" aria-hidden="true">✓</span>
-              <span><strong>Barrera Parental:</strong> Acceso a ajustes y soportes protegido contra toques de menores.</span>
-            </li>
-          </ul>
-
-          <div style="margin-top: var(--space-8); display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center;">
-            <a href="privacidad.html" class="btn btn-outline" style="border-color: #38BDF8; color: #38BDF8;">
-              Leer Política de Privacidad Completa
-            </a>
-            <a href="terminos.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #CBD5E1;">
-              Términos y Condiciones
-            </a>
+        <div class="specs-safety-grid reveal">
+          <div class="adv-safety-card">
+            <h3 class="adv-safety-title">Privacidad Infantil Garantizada por Diseño</h3>
+            <p style="font-size: 0.88rem; color: #CBD5E1;">
+              Construida bajo las normas de <strong>Google Play Designed for Families</strong>, <strong>Apple Kids Category</strong>, <strong>COPPA</strong> y <strong>LFPDPPP</strong>:
+            </p>
+            <ul class="adv-safety-list">
+              <li class="adv-safety-item">
+                <span class="adv-safety-icon">✓</span>
+                <span><strong>Cero Datos Personales:</strong> No pedimos nombre real, email, teléfono ni GPS.</span>
+              </li>
+              <li class="adv-safety-item">
+                <span class="adv-safety-icon">✓</span>
+                <span><strong>0% Anuncios y 0% Rastreadores:</strong> Libre de publicidad y sin acceso a AAID/IDFA.</span>
+              </li>
+              <li class="adv-safety-item">
+                <span class="adv-safety-icon">✓</span>
+                <span><strong>Sin Microtransacciones:</strong> Todo se gana resolviendo matemáticas dentro del juego.</span>
+              </li>
+              <li class="adv-safety-item">
+                <span class="adv-safety-icon">✓</span>
+                <span><strong>Barrera Parental (Parental Gate):</strong> Ajustes de adulto protegidos con reto matemático.</span>
+              </li>
+            </ul>
+            <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
+              <a href="privacidad.html" class="btn-clay btn-clay-green btn-clay-sm">📜 Política de Privacidad</a>
+              <a href="terminos.html" class="btn-clay btn-clay-cream btn-clay-sm">⚖️ Términos de Uso</a>
+            </div>
           </div>
+
+          <div class="tech-specs-card" id="ficha">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+              <img src="assets/icon.png" alt="Icono Aventura Numérica" width="48" height="48" style="border-radius: 12px;">
+              <div>
+                <h3 class="clay-font" style="font-size: 1.2rem; color: #FFFFFF;">Ficha Técnica Oficial</h3>
+                <p style="font-size: 0.78rem; color: #94A3B8;">Datos verificables de tienda</p>
+              </div>
+            </div>
+            <div class="tech-specs-list">
+              <div class="tech-spec-row"><span class="tech-spec-key">Aplicación / Versión</span><span class="tech-spec-val">Aventura Numérica · v2.0.0</span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Desarrollador</span><span class="tech-spec-val">Elesor Studio (México)</span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Paquete (Bundle ID)</span><span class="tech-spec-val"><code>com.aventura.numerica</code></span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Plataformas / Formato</span><span class="tech-spec-val">Android & iOS · Vertical (Portrait)</span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Edades / Grados</span><span class="tech-spec-val">4 a 10 años (Preescolar a 4º Primaria)</span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Permisos y Red</span><span class="tech-spec-val" style="color: #6EE7B7;">0 Permisos · 100% Offline</span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Recolección de Datos</span><span class="tech-spec-val" style="color: #6EE7B7;">Ninguna (100% Guardado Local)</span></div>
+              <div class="tech-spec-row"><span class="tech-spec-key">Contacto Privacidad</span><span class="tech-spec-val"><a href="mailto:privacidad@elesorstudio.com" style="color: #7DD3FC;">privacidad@elesorstudio.com</a></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Compacto en 2 Columnas -->
+        <div id="faq" class="faq-grid-compact reveal">
+          <details class="faq-item">
+            <summary>¿Para qué edades o grados está recomendada?</summary>
+            <div class="faq-answer">De <strong>Preescolar (4–5 años) a 4º de Primaria (9–10 años)</strong>. Desde el acceso <em>«Soy un adulto»</em> puedes elegir el grado escolar inicial o dejar que el niño use el botón <em>«🏁 Ya lo sé»</em>.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué pasa si mi hijo aún no sabe leer?</summary>
+            <div class="faq-answer">Todas las preguntas, pistas y diálogos incluyen un botón de megáfono con <strong>síntesis de voz offline en español</strong> para escuchar cada instrucción.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿La mascota castiga al niño si deja de jugar?</summary>
+            <div class="faq-answer"><strong>Nunca.</strong> No hay pérdidas ni castigos. Además, la Manzana siempre es gratuita e ilimitada (∞) para alimentar a su compañero en cualquier momento.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Pueden jugar varios hermanos en un mismo equipo?</summary>
+            <div class="faq-answer">Sí, cuenta con <strong>perfiles locales independientes</strong> para que cada hermano tenga su mascota, grado escolar y progreso propio sin conexión a internet.</div>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Modal Lightbox Accesible para Galería -->
-  <div id="gallery-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visualizador de captura de pantalla">
+  <!-- Modal Lightbox Accesible para Capturas Verticales -->
+  <div id="gallery-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visualizador de captura de pantalla de la app">
     <div class="lightbox-content">
       <button id="modal-close" class="lightbox-close" aria-label="Cerrar vista ampliada">✕</button>
-      <div class="media-16-9" style="box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);">
+      <div class="lightbox-phone-frame">
         <img id="modal-img" src="" alt="">
       </div>
+      <p id="modal-caption" class="lightbox-caption"></p>
     </div>
   </div>
 
   <!-- Footer Aventura Numérica -->
-  <footer class="site-footer" style="background-color: #08050F;">
+  <footer class="site-footer" style="background-color: #090612; border-top: 2px solid rgba(158, 133, 255, 0.2); padding-top: 2.5rem; padding-bottom: 1.5rem;">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-grid" style="margin-bottom: 1.5rem;">
         <div>
           <div class="footer-brand-title">
-            <img src="../assets/img/logo.png" alt="Logo de Elesor Studio" width="36" height="36" style="border-radius: var(--radius-sm); object-fit: contain;">
-            <span>Elesor Studio</span>
+            <img src="assets/icon.png" alt="Icono de Aventura Numérica" width="38" height="38" style="border-radius: 10px;">
+            <span class="clay-font">Aventura Numérica</span>
           </div>
-          <p class="footer-tagline">
-            Creadores de Aventura Numérica. Desarrollamos software educativo pensado para inspirar, acompañar y cuidar a los niños.
+          <p class="footer-tagline" style="margin-bottom: 6px;">
+            Un producto oficial de <strong>Elesor Studio</strong>. Videojuegos educativos en plastilina 3D pensados para inspirar y cuidar la infancia.
           </p>
+          <p style="font-size: 0.75rem; color: #64748B;">Paquete: <code>com.aventura.numerica</code> · México</p>
         </div>
 
         <div>
-          <h4 class="footer-column-title">Navegación</h4>
+          <h4 class="footer-column-title">Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="#pantallas" class="footer-link">Pantallas del Juego</a></li>
+            <li><a href="#companeros" class="footer-link">Mascotas 3D</a></li>
+            <li><a href="#mundos" class="footer-link">Mundos y Jefes</a></li>
+            <li><a href="#pedagogia" class="footer-link">Pedagogía CPA</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Elesor Studio</h4>
           <ul class="footer-links">
             <li><a href="../" class="footer-link">← Portada Elesor Studio</a></li>
-            <li><a href="#que-es" class="footer-link">¿Qué es el juego?</a></li>
-            <li><a href="#reinos" class="footer-link">Los 6 Reinos</a></li>
-            <li><a href="#caracteristicas" class="footer-link">Pedagogía</a></li>
-            <li><a href="#galeria" class="footer-link">Galería 16:9</a></li>
+            <li><a href="../miau-multiplicacion/" class="footer-link">🐱 Miau Multiplicación</a></li>
+            <li><a href="../#contacto" class="footer-link">Contacto y Soporte</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-column-title">Otras Aplicaciones</h4>
+          <h4 class="footer-column-title">Legal Tiendas</h4>
           <ul class="footer-links">
-            <li><a href="../miau-multiplicacion/" class="footer-link">Miau Multiplicación</a></li>
-            <li><a href="../#servicios" class="footer-link">Servicios de Estudio</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-column-title">Legal de la App</h4>
-          <ul class="footer-links">
-            <li><a href="privacidad.html" class="footer-link">Privacidad de la App</a></li>
-            <li><a href="terminos.html" class="footer-link">Términos de la App</a></li>
-            <li><a href="../privacidad.html" class="footer-link">Privacidad General Elesor</a></li>
+            <li><a href="privacidad.html" class="footer-link" style="color: #6EE7B7; font-weight: 700;">Política de Privacidad</a></li>
+            <li><a href="terminos.html" class="footer-link">Términos de Uso</a></li>
+            <li><a href="mailto:privacidad@elesorstudio.com" class="footer-link">privacidad@elesorstudio.com</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div>
-          © <span data-year>2026</span> Elesor Studio. Todos los derechos reservados sobre Aventura Numérica.
-        </div>
-        <div>
-          <a href="../" style="color: #38BDF8; text-decoration: underline;">Volver a Elesor Studio</a>
-        </div>
+      <div class="footer-bottom" style="padding-top: 1rem;">
+        <div>© <span data-year>2026</span> Elesor Studio. Todos los derechos reservados sobre Aventura Numérica.</div>
+        <div><a href="../" style="color: #7DD3FC; text-decoration: underline; font-weight: 700;">Volver a Elesor Studio</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts modulares -->
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/aventura.js"></script>

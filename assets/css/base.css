@@ -194,6 +194,8 @@ a {
   font-size: var(--text-lg);
   letter-spacing: -0.02em;
   color: #FFFFFF;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-logo-img {
@@ -207,7 +209,7 @@ a {
   display: none;
   list-style: none;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
 .nav-link {
@@ -216,6 +218,7 @@ a {
   color: rgba(255, 255, 255, 0.8);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-sm);
+  white-space: nowrap;
   transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
